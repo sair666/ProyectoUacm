@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="MVC">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Patrón Modelo Vista Controlador</title>
+    
+    <style>
+        header {
+            background-color: blueviolet;
+        }
+        nav {
+            
+            background-color: green;
+        }
+
+        section {
+            background-color: aqua;
+        }
+
+        aside {
+            background-color: beige;
+        }
+
+        footer {
+            background-color: blue;
+        }
+        h2{
+            color: red;
+        }
+        
+        #caja_principal{
+            width: 960px;
+            margin: 15px auto;
+            text-align: center;
+        }
+        
+        #cabecera{
+            background: black;
+            border:1px;
+            padding: 20px;
+        }
+        #menu{
+            background: #CCCCCC;
+            padding: 5px;
+        }
+        
+        #menu li{
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            font: bold 14px verdana, sans-serif;
+        }
+        
+        #area_principal{
+            background: verdana;
+            float: left;
+            width: 650px;
+            padding: 30px;/*separacion del elemento*/
+            
+        }
+        #area_principal img{
+            width: 700px;
+        }
+        
+        #barra_lateral{
+            float: left;
+            width: 210px;
+            padding: 20px;
+            background: #CCCC22;
+            margin: px 0px; /*separacion de la caja*/
+        }
+        #pie_pagina{
+            background: rgba(0, 128, 0, 0.3);
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja_principal">
+        <header id="cabecera">
+            <h1><FONT COLOR="blue">Patrón Modelo Vista Controlador </FONT></h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Contenido</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="area_principal">
+            <img  src="https://th.bing.com/th/id/R.c58727cde967d6411470b18a2d5a380f?rik=3o5RpoF3GNH5tg&riu=http%3a%2f%2fwww.oscarblancarteblog.com%2fwp-content%2fuploads%2f2014%2f07%2fmvcflow.png&ehk=Su9Mn3QtwrQgoJiZmJCOJD%2fsTQwAfkaRO7ZP85gbSLs%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+            <article>
+                <h2>MVC</h2>
+                
+
+                <p>Publicada el 20-08-2022</p>
+
+                <p>MVC (Modelo-Vista-Controlador) es un patrón en el diseño de software comúnmente utilizado para implementar interfaces de usuario, datos y lógica de control. Enfatiza una separación entre la lógica de negocios y su visualización. Esta "separación de preocupaciones" proporciona una mejor división del trabajo y una mejora de mantenimiento. Algunos otros patrones de diseño se basan en MVC, como MVVM (Modelo-Vista-modelo de vista), MVP (Modelo-Vista-Presentador) y MVW (Modelo-Vista-Whatever).
+
+Las tres partes del patrón de diseño de software MVC se pueden describir de la siguiente manera:
+
+Modelo: Maneja datos y lógica de negocios.
+Vista: Se encarga del diseño y presentación.
+Controlador: Enruta comandos a los modelos y vistas.</p>
+				<p>Modelo
+El modelo define qué datos debe contener la aplicación. Si el estado de estos datos cambia, el modelo generalmente notificará a la vista (para que la pantalla pueda cambiar según sea necesario) y, a veces, el controlador (si se necesita una lógica diferente para controlar la vista actualizada).
+
+Volviendo a nuestra aplicación de lista de compras, el modelo especificará qué datos deben contener los artículos de la lista (artículo, precio, etc.) y qué artículos de la lista ya están presentes</p>
+				<p>Vista
+La vista define cómo se deben mostrar los datos de la aplicación.
+
+En nuestra aplicación de lista de compras, la vista definiría cómo se presenta la lista al usuario y recibiría los datos para mostrar desde el modelo.</p>
+				<p>Controlador
+El controlador contiene una lógica que actualiza el modelo y / o vista en respuesta a las entradas de los usuarios de la aplicación.
+
+Entonces, por ejemplo, nuestra lista de compras podría tener formularios de entrada y botones que nos permitan agregar o eliminar artículos. Estas acciones requieren que se actualice el modelo, por lo que la entrada se envía al controlador, que luego manipula el modelo según corresponda, que luego envía datos actualizados a la vista.
+
+Sin embargo, es posible que también se desee actualizar la vista para mostrar los datos en un formato diferente, por ejemplo, cambiar el orden de los artículos de menor a mayor precio o en orden alfabético. En este caso, el controlador podría manejar esto directamente sin necesidad de actualizar el modelo.
+
+ </p>
+
+				
+
+            </article>
+            <article>
+                <!--
+            <header>
+                <hgroup>
+                    <h1>Titulo de la segunda entrada</h1>
+                    <h2>Subtitulo de la segunda entrada</h2>
+                </hgroup>
+                <p>Publicada el 18-08-2022</p>
+            </header>
+-->
+                
+
+
+            </article>
+        </section>
+        <aside id="barra_lateral">
+            <blockquote>El concepto de MVC fue introducido por primera vez por Trygve Reenskaug, quien lo propuso como una forma de desarrollar el GUI de aplicaciones de escritorio. Hoy en día, el patrón MVC se utiliza para aplicaciones web modernas porque permite que la aplicación sea escalable, mantenible y fácil de expandir.</blockquote>
+			<blockquote>¿Por qué deberías usar MVC?
+Tres palabras: separación de preocupaciones (separation of concerns), o SoC para abreviar.
+
+El patrón MVC te ayuda a dividir el código frontend y backend en componentes separados. De esta manera, es mucho más fácil administrar y hacer cambios a cualquiera de los lados sin que interfieran entre sí.
+
+Pero esto es más fácil decirlo que hacerlo, especialmente cuando varios desarrolladores necesitan actualizar, modificar o depurar una aplicación completada simultáneamente. MVC es una forma de pensar en cómo funciona una aplicación web.
+
+Es como preparar la cena de Acción de Gracias. POR TODO TODO TODO</blockquote>
+            
+        </aside>
+        <footer id="pie_pagina">
+			<div class="container">
+      <div class="copyright">
+        &copy; Creado <strong>mayansofware</strong>. Guardamos el derecho de privacidad
+      </div>
+      <div class="creditos">
+        Designado por <a href="https://www.facebook.com/binder.beste/">Mayansofware</a> y Alan Cardenas Garcia
+      </div>
+    </div>
+        </footer>
+    </div>
+</body>
+
+</html>
