@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+
+<form method="post" action="compra.php" name="test">
+<div class="form-element">
+<label>Name: </label>
+<input type="text" name="name" />
+</div>
+<div class="form-element">
+<label>Email: </label>
+<input type="email" name="email" required />
+</div>
+
+<button type="submit" name="enviar" value="enviar">Enviar</button>
+</form>
+
+
+   <head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="shortcut icon" href="images/favicon.png" type="">
+      <title>Pagos</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+   </head>
+   <body class="sub_page">
+      <div class="hero_area">
+
+      <!-- inner page section -->
+      <section class="inner_page_head">
+         <div class="container_fuild">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <h3>Comprar</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end inner page section -->
+      <!-- why section -->
+      <section class="why_section layout_padding">
+         <div class="container">
+         
+            <div class="row">
+               <div class="col-lg-8 offset-lg-2">
+                  <div class="full">
+                     <form action="Forma_de_pago.htm">
+                        <fieldset>
+						   <p>Información del cliente</p>
+                           <input type="email" placeholder="Correo electrónico" name="name" required />
+                           <input type="nombre" placeholder="Nombre Completo" name="email" required />
+						   <input type="cel" placeholder="Telefeno celular" name="telefono" required />
+						   <p>Domicilio de entrega</p>
+						   <input type="calle" placeholder="Calle" name="subject" required />
+						   <input type="numero_exterior" placeholder="Numero exterior" name="telefono" required />
+						   <input type="numero_interior" placeholder="Numero interior" name="telefono" required />
+						   <input type="telefono" placeholder="Codigo postal" name="telefono" required />
+						   
+						   <select TYPE="ciudad" name="select">
+								<option value="value1">Aguascalientes</option>
+								<option value="value2" selected>Baja California norte</option>
+								<option value="value3">Campeche</option>
+								<option value="value4">Chiapas</option>
+								<option value="value5" selected>Chihuahua</option>
+								<option value="value6">Coahuila</option>
+								<option value="value7">Ciudad de Mexico</option>
+								<option value="value8" selected>Colima</option>
+								<option value="value9">Durango</option>
+								<option value="value10">Guanajuato</option>
+								<option value="value11" selected>Guerreo</option>
+								<option value="value12">Hidalgo</option>
+								<option value="value13">Guadalajara</option>
+								<option value="value14" selected>Michoacan</option>
+								<option value="value15">Estado de Mexico</option>
+								<option value="value16">Nayarit</option>
+								<option value="value17" selected>Nuevo Leon</option>
+								<option value="value18">Oaxaca</option>
+								<option value="value19">Puebla</option>
+								<option value="value20" selected>Queretaro</option>
+								<option value="value21">Quintana Roo</option>
+								<option value="value22">San Luis Potosi</option>
+								<option value="value23" selected>Sinaloa</option>
+								<option value="value24">Sonora</option>
+								<option value="value25">Tabasco</option>
+								<option value="value26" selected>Tamaulipas</option>
+								<option value="value27">Tlaxcala</option>
+								<option value="value28">Veracruz</option>
+								<option value="value29" selected>Yucatan</option>
+								<option value="value30">Zacatecas</option>
+								<option value="value31">Baja California sur</option>
+							</select>
+							
+						
+						   <input type="municipio" placeholder="ciudad o Municipio" name="telefono" required />
+                           <textarea TYPE="detalles" placeholder="Referencias ¿entre que se encuentra cerca?" required></textarea>
+                           <input class="nav-link" href="Forma_de_pago.html" type="submit" value="Forma de pago" />
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end why section -->
+
+ 
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
